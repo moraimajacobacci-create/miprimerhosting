@@ -1,0 +1,140 @@
+/* estilos.css */
+
+body{
+  font-family:"Poiret One", sans-serif;
+}
+
+/* Video de fondo */
+#video-fondo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+/* Barra de navegación */
+nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Contenido principal */
+.contenido {
+  max-width: 400px;
+  margin: 5vh auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Formulario */
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.1rem;
+  margin-top: 0.3rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.8em;
+  background-color: #56c596;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3da87a;
+}
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+  .contenido {
+    max-width: 600px;
+  }
+
+  h1 {
+    font: size 2.5em;;
+  }
+
+  p, form label, form input, button {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .contenido {
+    max-width: 700px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contenido {
+    max-width: 900px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+#fa-brands {
+  color: #3da87a;
+}
+
